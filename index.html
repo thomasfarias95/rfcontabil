@@ -5,57 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/home.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
     <title>Consultoria RF Contabil</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="menu">
-                <a href="#quem-somos">Quem Somos</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#contato">Contato</a>
+    <header >
+        <nav class="navbar bg-gray fixed-top ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#quem-somos">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                    </div>
+                </div>
             </div>
         </nav>
-
     </header>
-
     <hr>
-
     <main>
-        <section class="title" id="quem-somos">
+        <section class="container-fluid text-center d-grid" id="quem-somos">
             <h1>Bem-Vindo</h1>
             <p class="home">A RF Consultoria Contábil tem o compromentimento em entregar os serviços oferecidos com alta
                 qualidade para empresas e pessoas físicas,
                 auxiliando em varias situações na áera da contabilidade, fiscal e patrimonial. Buscando reduzir gastos
                 desnecessarios e corrigir erros recorrentes. </p>
-        </section>
-        <section class="subtitle">
-            <div class="card">
-                <h2>Missão</h2>
-                <br>
-                <p>Fornecer soluções contabies e fiscais, de forma eficiente e personalizadas, visando a satisfação
-                    dos nossos clientes e entregando uma excelencia no serviço prestado.</p>
-                <br>
-            </div>
+            <hr>
+            <div class="card-group d-flex justify-content-between img-fluid">
+                <div class="card">
+                    <img src="./img/missao.png" class="card-img-top img-fluid fs-1" alt="Missao">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão</h5>
+                        <p class="card-text">Fornecer soluções contabies e fiscais, de forma eficiente e personalizadas,
+                            visando a satisfação
+                            dos nossos clientes e entregando uma excelencia no serviço prestado.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/visao.png" class="card-img-top img-fluid fs-1" alt="Visao">
+                    <div class="card-body">
+                        <h5 class="card-title"> Visão</h5>
+                        <p class="card-text">Nossa visão é ser referencia no seguimento, contribuindo para o
+                            sucesso e crescimento
+                            sustentavel de nossos clientes.</p>
+                    </div>
 
-            <div class="card">
-                <h2>Visão</h2>
-                <br>
-                <p> Nossa visão é ser referencia no seguimento, contribuindo para o sucesso e crescimento
-                    sustentavel de nossos clientes.
-                </p>
-                <br>
-            </div>
-            <div class="card">
-                <h2>Valores</h2>
-                <br>
-                <ul>
-                    <li>Compromisso com a ética e transpareência</li>
-                    <li>Excelência no atendimento e nos serviços prestados</li>
-                    <li>Inovação e atualização constante</li>
-                </ul>
+                </div>
+                <div class="card">
+                    <img src="./img/valores.png" class="card-img-top img-fluid fs-1" alt="Valores">
+                    <div class="card-body">
+                        <h5 class="card-title">Valores</h5>
+                        <p class="card-text">Compromisso com a ética e transpareência.
+                            Excelência no atendimento e nos serviços prestados.
+                            Inovação e atualização constante</p>
+                    </div>
+                </div>
             </div>
         </section>
         <br>
@@ -74,53 +97,78 @@
         <section class="servicos">
             <h2>Principais Serviços</h2>
             <br>
-            <ul class="cards">
-                <li class="card">Contabilidade para Empresas.</li>
-                <li class="card">Declaração de Imposto de Renda.</li>
-                <li class="card">Auditoria Contábil.</li>
-                <li class="card">Consultoria Financeira.</li>
-                <li class="card">Controle patrimonial.</li>
-                <li class="card">Serviço Administrativo. </li>
-            </ul>
-            <br>
+            <div class="row row-cols-1 row-cols-md-6 g-3 img-fluid d-flex justify-content-center " >
+                <div class="col">
+                    <div class="card h-1 w-75 img-fluid" >
+                        <img src="./img/Contabilidade para Empresas..png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-2  w-75 img-fluid">
+                        <img src="./img/Contabilidade para Empresas. (1).png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-3  w-75 img-fluid">
+                        <img src="./img/Contabilidade para Empresas. (2).png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-4  w-75 img-fluid">
+                        <img src="./img/Contabilidade para Empresas. (3).png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-5  w-75 img-fluid">
+                        <img src="./img/Contabilidade para Empresas. (4).png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-6  w-75  img-fluid">
+                        <img src="./img/Contabilidade para Empresas. (5).png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+
 
         </section>
         <hr>
-        <section class="contato" id="contato">
-            <img class="account" src="img/accounting-343067_1280.jpg" alt="account">
+        <section class="contato img-fluid bg-image" id="contato">
             <h2>Envie uma Mensagem</h2>
-            <form action="https://formsubmit.co/ajax/rosivaldo.fariascontabilidade@outlook.com.br" method="POST"
-                class="formulario">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required>
-                <br>
-                <br>
-
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <br>
-
-
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
-                <br>
-
-                <button type="submit" class="btn">Enviar Mensagem</button>
-
-
-            </form>
+           <form class="formulario mb-5 py-5">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1"  required>
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"  required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button class="btn">Enviar</button>
+           </form>
+        
+            
+           
         </section>
-        <footer>
+        <footer class="col-md-3 text-white py-1 w-100 h-100 ">
             <ul class="contatos">
-                <li class="email">Email: rosivaldo.fariascontabilidade@outlook.com.br</li>
-                <li class="phone">Telefone: (81) 987206675 </li>
-                <li class="instagram">Instagram: @rf.consultoriacontabil</li>
+               
+                <i class="bi bi-envelope-at">Email: rosivaldo.fariascontabilidade@outlook.com.br</i>
+                
+                <i class="bi bi-phone">Telefone: (81) 987206675 </i>
+                <i class="bi bi-instagram">@rf.consultoriacontabil</i>
+                
             </ul>
             <p>&copy; 2025 - Criado e Desenvolvido por Thomas Farias</p>
         </footer>
     </main>
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
