@@ -1,7 +1,15 @@
 
-*{    box-sizing: border-box;
+*{    
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+html
+{
+  position:absolute;
+  width:100%;
+  height:100%;
 }
 
 body {
@@ -13,6 +21,8 @@ body {
     display: block;
     outline: none;
     max-width: 100%;
+    overflow: auto;
+    
 
 }
 
@@ -25,33 +35,31 @@ header {
     text-align: center;
     display: grid;
     place-content: start;
-   
     padding-top: 3.75rem;
     max-width: 100%;
     height: auto;
 }
 
 .navbar {
-    margin-right: 5rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 12rem;
+   
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000000;
     text-align: center;
     align-items: center;
     position: fixed;
-    margin-top: -2.5em;
+   
+   
+}
+.nav-item{
+    justify-content: space-between;
+    text-align: left;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.5rem;
+    height: 100%;
 }
 
-.menu a {
-    list-style: none;
-    display: inline;
-    flex-direction: row;
-    gap: 1.5rem;
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 1rem;
-}
 
 .title {
     text-align: center;

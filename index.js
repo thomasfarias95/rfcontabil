@@ -8,7 +8,7 @@ const options = {
     "enabled": true,
     "chatButtonSetting": {
         "backgroundColor": "#16BE45",
-        "ctaText": "Message",
+        "ctaText": "Mensagem",
         "borderRadius": "8",
         "marginLeft": "20",
         "marginBottom": "20",
