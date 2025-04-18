@@ -54,10 +54,12 @@ header {
 .nav-item{
     justify-content: space-between;
     text-align: left;
-    display: inline-block;
+    display: flex;
     font-weight: 900;
     font-size: 1.5rem;
     height: 100%;
+   align-items: center;
+ 
 }
 
 
