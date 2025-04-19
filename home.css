@@ -104,6 +104,8 @@ p {
     animation-duration: 2s;
     animation-name: slidein;
     display: grid;
+    justify-content: center;
+    left: 1rem;
   
 }
 
