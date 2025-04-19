@@ -100,18 +100,11 @@ p {
 .card {
     height: auto;
     padding: 1.5rem;
-    font-size: 20px;
-    justify-content: space-around;
     align-items: center;
-    min-height: 50px;
-    flex: 0 0 100%;
     animation-duration: 2s;
     animation-name: slidein;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 2.5rem;
-    max-width: 100%;
-    flex-wrap: wrap;
+  
 }
 
 @keyframes slidein {
@@ -128,23 +121,10 @@ p {
 
 
 
-.contato ul {
-    width: 50%;
-    display: block;
-    align-items: start;
-    padding: 20px;
-    border-radius: 0 20px 20px 0;
-    box-shadow: rgba(237, 234, 234, 0.471) 5px 6px 20px 0;
-}
-
-.contato h2 {
-    display: flex;
-    justify-content: space-between;
-    font-size: 7rem;
-}
-
 i{
     font-size: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
