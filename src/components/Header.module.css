@@ -1,0 +1,128 @@
+/* --- ESTILOS PADRÃO (DESKTOP) --- */
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  /* ATENÇÃO: 10rem (160px) pode ser muito grande. Ajustei para algo mais comum. */
+  height: 90px; 
+}
+
+/* Esconde elementos de mobile por padrão */
+.menuToggle, .mobileCta {
+    display: none; 
+}
+
+/* Estilo do Menu Desktop (o padrão) */
+.navMenu {
+    display: flex; /* Garante que os links fiquem em linha no desktop */
+    align-items: center;
+    /* Resetando posições fixas que podem ter sido herdadas */
+    position: static; 
+    width: auto;
+    height: auto;
+    /* Deve ser invisível no desktop (ver media query) */
+}
+
+.navMenu a {
+  margin-left: 30px;
+  text-decoration: none; /* Remove sublinhado */
+  color: var(--color-text-dark);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: var(--color-primary);
+}
+
+/* Estilo do Botão CTA (Base) */
+.ctaButton { 
+    background-color: var(--color-primary);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ctaButton:hover {
+  background-color: #7d6545;
+}
+
+/* Estilo do CTA de Desktop */
+.headerCta {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* --- ESTILOS MOBILE (APLICADOS ABAIXO DE 768px) --- */
+
+@media (max-width: 768px) {
+    
+    /* 1. Esconde o CTA de desktop */
+    .headerCta {
+        display: none;
+    }
+
+    /* 2. Mostra o botão hamburguer (Toggle) */
+    .menuToggle {
+        display: block; 
+    }
+    
+    /* 3. Estilo Padrão do Menu Mobile (Escondido) */
+    .navMenu {
+        /* Transforma em menu flutuante */
+        position: fixed;
+        top: 0;
+        right: -100%; /* Inicia FORA da tela */
+        width: 100%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: white; 
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column; /* Links em coluna */
+        padding-top: 80px; 
+        transition: right 0.3s ease-in-out; /* Animação suave */
+        z-index: 999;
+    }
+
+    /* 4. Estilo ATIVO do Menu Mobile (Mostra na tela) */
+    .navMenuActive {
+        right: 0; /* Move para dentro da tela */
+        /* display: flex é mantido do .navMenu */
+    }
+
+    /* Estilo dos Links no Menu Mobile */
+    .navMenu a {
+        margin: 0;
+        padding: 15px 30px;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+        width: 100%;
+    }
+    
+    /* 5. Mostra o CTA dentro do menu mobile */
+    .mobileCta {
+        display: inline-block;
+        margin: 20px 30px;
+        padding: 12px;
+        text-align: center;
+        width: auto;
+    }
+}

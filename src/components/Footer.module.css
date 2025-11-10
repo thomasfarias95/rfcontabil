@@ -1,0 +1,110 @@
+.footerContainer {
+  
+  background-color: var(--color-text-dark); 
+  color: #ccc; 
+  padding: 60px 5% 0; 
+  font-size: 0.95rem;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 40px;
+}
+
+.footerBlock h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif; 
+}
+
+.logoFooter {
+    border-radius: 50%;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+
+.contactList, .accessLinks {
+  list-style: none;
+}
+
+.contactList li, .accessLinks li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: var(--color-primary); 
+  margin-right: 10px;
+  min-width: 20px;
+}
+
+.accessLinks a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.accessLinks a:hover {
+  color: var(--color-primary); 
+}
+
+
+.socialLinks {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.socialLinks a {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: white;
+}
+
+
+.copyRight {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.copyRight p {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr; 
+    text-align: center;
+  }
+  .footerBlock {
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .footerBlock:last-child {
+      border-bottom: none;
+  }
+  .contactList li, .accessLinks li {
+    justify-content: center;
+  }
+  .socialLinks {
+      justify-content: center;
+  }
+}

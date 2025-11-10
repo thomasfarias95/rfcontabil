@@ -1,0 +1,50 @@
+/* 1. O @import deve ser a PRIMEIRA coisa (além de @charset) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+
+:root {
+  --color-primary: #A0845B; 
+  --color-text-dark: #333333; 
+  --color-background-light: #F9F9F9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-dark);
+  background-color: var(--color-background-light);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-text-dark);
+}
+
+/* Estilo Básico do Botão CTA (Pode ser removido se estiver usando CSS Modules) */
+.cta-button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #7d6545;
+}
+
+.noScroll {
+    overflow: hidden; 
+    touch-action: none; 
+}
