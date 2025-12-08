@@ -1,75 +1,39 @@
-# React + TypeScript + Vite
+# 🚀 RF Contábil: Landing Page Institucional
+[![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen)](LINK_DO_SEU_REPOSITORIO)
+[![Tecnologias](https://img.shields.io/badge/Tecnologias-React%20%7C%20TypeScript%20%7C%20CSS%20Modules-blue)](LINK_DO_SEU_REPOSITORIO)
+[![Licença](https://img.shields.io/badge/Licença-MIT-lightgray)](./LICENSE)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💡 Sobre o Projeto
+Landing Page moderna e responsiva desenvolvida para a RF Contábil – Rosivaldo Farias. O objetivo é apresentar os serviços de consultoria contábil de forma clara, profissional e com forte Call-to-Action (CTA), focada na **conversão de leads via WhatsApp e formulário de contato**.
 
-Currently, two official plugins are available:
+Este projeto demonstra minhas habilidades em:
+* Desenvolvimento Front-end com React e TypeScript.
+* Criação de componentes reutilizáveis e estados (Hooks).
+* Modularização de estilos usando CSS Modules e princípios de responsividade (Mobile-First).
+* Implementação de navegação Hamburger Menu e controle de scroll.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Principais Funcionalidades
+* **Design Responsivo:** Layout adaptável para desktop, tablet e mobile.
+* **Componentização:** Estrutura modular em React (`<Header />`, `<HeroSection />`, `<Footer />`).
+* **Menu Hamburger:** Navegação otimizada para a experiência mobile.
+* **CTAs Estratégicos:** Foco em direcionar o usuário para a consultoria gratuita via WhatsApp.
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
+| Categoria | Tecnologia | Versão |
+| :--- | :--- | :--- |
+| Framework | **React** | 18+ |
+| Linguagem | **TypeScript** | 5+ |
+| Build Tool | **Vite** | 4+ |
+| Estilização | **CSS Modules** | Nativo |
+| Ícones | **React Icons** | ^5.0.1 |
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## ⚙️ Como Instalar e Rodar Localmente
+Siga estas instruções para configurar o projeto na sua máquina:
 
-Note: This will impact Vite dev & build performances.
+### Pré-requisitos
+Certifique-se de ter o [Node.js](https://nodejs.org/en) e o [npm] (ou yarn/pnpm) instalados.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Clonar o Repositório
+```bash
+git clone LINK_DO_SEU_REPOSITORIO
+cd nome-do-repositorio
