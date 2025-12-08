@@ -1,0 +1,76 @@
+import React from 'react';
+import styles from "./TestimonialsCarousel.module.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+
+
+
+const testimonials = [
+  {
+    id: 1,
+    text: "A consultoria estratégica mudou o jogo para o nosso negócio. Análises precisas e suporte rápido. Recomendo!",
+    author: "Aldisio S.",
+    title: "CEO, CT Ferroviário"
+  },
+  {
+    id: 2,
+    text: "Agilidade incrível na abertura da minha empresa. O processo foi muito mais rápido e sem burocracia do que eu esperava.",
+    author: "Thomas F.",
+    title: "Empreendedora MEI, Tasf Log&Transp"
+  },
+  {
+    id: 3,
+    text: "A gestão fiscal é impecável. Finalmente conseguimos otimizar a carga tributária com total segurança legal.",
+    author: "Espaço Vida"
+    
+  },
+];
+
+const CommentsCarousel: React.FC = () => {
+  return (
+    <section id="comentario" className={styles.commentsSection}>
+      <div className={styles.container}>
+        <h2>O que dizem os nossos clientes</h2>
+        
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          
+          breakpoints={{
+            640: {
+              slidesPerView: 1.5,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          className={styles.mySwiper}
+        >
+          {testimonials.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className={styles.depoimentoCard}>
+                <p className={styles.depoimentoTexto}>"{item.text}"</p>
+                <div className={styles.depoimentoAutor}>
+                  <span className={styles.autorNome}>{item.author}</span>
+                  <span className={styles.autorCargo}>{item.title}</span>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
+};
+
+export default CommentsCarousel;

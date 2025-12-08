@@ -40,6 +40,7 @@ return (
  
  <a href="#servicos">Serviços</a>
  <a href="#sobre">Sobre</a>
+ <a href="#comentario">Comentarios</a>
  </nav>
 <a href="#contato" className={`${styles.ctaButton} ${styles.headerCta} ${styles.desktopCta}`}>
 Fale Conosco
@@ -50,6 +51,7 @@ Fale Conosco
 
 <a href="#servicos" onClick={handleLinkClick}>Serviços</a>
  <a href="#sobre" onClick={handleLinkClick}>Sobre</a>
+ <a href="#comentario" onClick={handleLinkClick}>Comentarios</a>
  <a href="#contato" onClick={handleLinkClick} className={`${styles.ctaButton} ${styles.mobileCta}`}>
 Fale Conosco
 </a>

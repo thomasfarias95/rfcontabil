@@ -6,6 +6,7 @@ import './index.css';
 import ServicesSection from './components/ServicesSection';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
+import TestimonialsCarousel from './components/TestimonialsCarousel';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <HeroSection /> 
         <AboutSection /> 
          <ServicesSection /> 
+         <TestimonialsCarousel />
         <ContactSection /> 
       </main>
       <Footer/>

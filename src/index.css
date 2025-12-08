@@ -1,6 +1,9 @@
 /* 1. O @import deve ser a PRIMEIRA coisa (além de @charset) */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
 
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
 :root {
   --color-primary: #A0845B; 
   --color-text-dark: #333333; 
