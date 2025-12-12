@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ServicesSection.module.css'; 
+import styles from '../styles/modules/ServicesSection.module.css'; 
 import { GiReceiveMoney, GiFiles, GiCalendar, GiFactory } from 'react-icons/gi'; 
 
 

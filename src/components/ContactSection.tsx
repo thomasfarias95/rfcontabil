@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ContactSection.module.css'; 
+import styles from '../styles/modules/ContactSection.module.css'; 
 import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa'; 
 
 const ContactSection: React.FC = () => {
